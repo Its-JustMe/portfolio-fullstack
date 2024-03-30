@@ -11,8 +11,8 @@
         "skills": [
             {
                 "name": "HTML5",
-                "icon": "",
-                "percent": ""
+                "icon": "devicon-html5-plain",
+                "percent": "80%"
             },
             {
                 "name": "CSS3",
