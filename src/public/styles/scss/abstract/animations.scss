@@ -1,0 +1,22 @@
+@mixin typing-animation($width) {
+    $keyframes-name: unique-id(); // Gera um nome único para os keyframes
+    
+    @keyframes #{$keyframes-name} {
+        from {
+            width: 0;
+        } 
+        to {
+            width: $width;
+        }
+    }
+    
+    animation: $keyframes-name 4.5s infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}

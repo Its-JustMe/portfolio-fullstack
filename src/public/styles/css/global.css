@@ -1,10 +1,13 @@
+@font-face {
+  font-family: "Typo Formal";
+  src: url("../../../fonts/typo-formal.otf");
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
   border: none;
-  font-family: Arial, Helvetica, sans-serif;
   color: inherit;
   text-decoration: none;
   resize: none;
@@ -22,12 +25,86 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 6em;
+  scrollbar-width: thin;
+  scrollbar-color: #f388f3;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #63b6fa;
+  border-radius: 6px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.small {
+  font-size: small;
+}
+
+.v-large {
+  font-size: x-large;
+}
+
+.main-heading {
+  font-size: clamp(4vw, 3.5em, 3em);
+}
+
+.main-subheading {
+  font-size: clamp(1vw, 2.2em, 1.8em);
+}
+
+.gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #63b6fa, #f388f3);
+}
+
+.align-right {
+  text-align: right;
+}
+
+.main-subheading.animation-typing {
+  width: 12ch;
+  white-space: nowrap;
+  animation: um6elc4 4.5s infinite;
+}
+@keyframes um6elc4 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 12ch;
+  }
+}
+
+body {
+  font-size: x-large;
+}
+@media screen and (max-width: 64em) {
+  body {
+    font-size: large;
+  }
 }
 
 .page-header {
   width: 100%;
   height: 100px;
   position: fixed;
+  z-index: 111;
   padding: 4px;
   display: flex;
   justify-content: flex-start;
@@ -40,7 +117,7 @@ html {
   backdrop-filter: blur(5px);
   transform: translateY(0px);
   border-bottom: 3px solid transparent;
-  border-image: linear-gradient(to right, #228054, #50abf7) 10;
+  border-image: linear-gradient(to right, #63b6fa, #f388f3) 10;
 }
 
 .page-header.hidden {
@@ -50,7 +127,6 @@ html {
 .menu-wrap {
   width: 100%;
   margin-left: 25px;
-  font-size: large;
 }
 
 .menu {
@@ -63,7 +139,7 @@ html {
   transition: all 0.8s;
 }
 .menu-item :hover {
-  color: #50abf7;
+  color: #63b6fa;
 }
 .menu-item > a {
   position: relative;
@@ -74,7 +150,7 @@ html {
   width: 0px;
   height: 2.5px;
   border-radius: 5px;
-  background-image: linear-gradient(to right, #228054, #50abf7);
+  background-image: linear-gradient(to right, #63b6fa, #f388f3);
   position: absolute;
   bottom: 0px;
   left: 0;
@@ -87,15 +163,37 @@ html {
 .introduction {
   width: 100%;
   min-height: 100vh;
-  background-image: linear-gradient(to right, rgba(11, 38, 85, 0.5058823529), rgba(11, 38, 85, 0.5058823529)), url("https://w.forfun.com/fetch/0d/0df95cbd082b71f74ca3c2b624fae74f.jpeg");
+  background-image: linear-gradient(to bottom, rgba(11, 38, 85, 0.5058823529), rgba(0, 0, 0, 0.737254902)), url("../../../imgs/wallpaper.png");
   background-size: cover;
   background-repeat: no-repeat;
+}
+.introduction .info_container {
+  width: 100vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 3s;
+  animation: fadeIn 3s;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+}
+.introduction .info_container .pfp {
+  width: clamp(20vw, 15em, 9em);
+  height: auto;
+  border-radius: 50%;
+  transform: scaleX(-1);
 }
 
 body {
   background-color: #000;
   height: 200vh;
   color: #fff;
+  font-family: "Typo Formal";
 }
 
 /*# sourceMappingURL=global.css.map */

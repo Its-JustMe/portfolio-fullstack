@@ -18,3 +18,12 @@ export const changeNavbarOnScroll = (header) => {
 
     last_scroll_top = current_scroll <= 0 ? 0 : current_scroll;
 }
+
+function activateScrollAnimations () {
+    const data_animate = document.querySelectorAll('[data-animate]');
+
+    for (let i = 0; i < data_animate.length; i++) {
+        const current_element = data_animate[i];
+        current_element.setAttribute('data-animate', 'true');
+    }
+}

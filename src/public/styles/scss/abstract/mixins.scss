@@ -1,10 +1,13 @@
 // Declaração de variáveis globais
 $text-color: #fff;
-$primary-theme-color: #50abf7;
-$secondary-theme-color: #228054;
-$heading-size: 1.8em;
+$primary-theme-color: #63b6fa;
+$secondary-theme-color: #f388f3;
 
-$gradient-theme: linear-gradient(to right, $secondary-theme-color, $primary-theme-color);
+$default-font: 'Typo Formal';
+$heading-size: clamp(4vw, 3.5em, 3em);
+$subheading-size: clamp(1vw, 2.2em, 1.8em);
+
+$gradient-theme: linear-gradient(to right, $primary-theme-color, $secondary-theme-color);
 
 // Mixins
 

@@ -1,0 +1,26 @@
+.small {
+    @include set-small-font();
+}
+.v-large {
+    @include set-very-large-font();
+}
+.main-heading {
+    font-size: $heading-size;
+}
+.main-subheading {
+    font-size: $subheading-size;
+}
+
+.gradient {
+    @include gradient-text();
+}
+
+.align-right {
+    text-align: right;
+}
+
+.main-subheading.animation-typing {
+    width: 12ch; 
+    white-space: nowrap;
+    @include typing-animation(12ch);
+}

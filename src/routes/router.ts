@@ -1,14 +1,9 @@
-import express from 'express';
+import express, { Request, Response } from 'express';
+import { homeController } from '../controllers/homeController';
 const router = express.Router();
 
-router.get('/', (req, res) => {
-  res.render(
-    'pages/index', 
-    {
-      erros: null,
-      dados: null
-    }
-  );
+router.get('/', (req: Request, res: Response) => {
+  homeController(req, res);
 });
 
 

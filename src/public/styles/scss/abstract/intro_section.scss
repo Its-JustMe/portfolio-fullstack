@@ -2,8 +2,34 @@
     width: 100%;
     min-height: 100vh;
     background-image: 
-        linear-gradient(to right, #0b265581, #0b265581),
-        url('https://w.forfun.com/fetch/0d/0df95cbd082b71f74ca3c2b624fae74f.jpeg');
+        linear-gradient(to bottom, #0b265581, #000000bc),
+        url('../../../imgs/wallpaper.png');
     background-size: cover;
     background-repeat: no-repeat;
+
+    .info_container {
+        width: 100vw;
+
+        position: absolute;
+            top: 50%;
+            left: 50%;
+        transform: translate(-50%, -50%);
+
+        transition: opacity 3s;
+        animation: fadeIn 3s;
+
+        display: flex;
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+            gap: 2em;
+            justify-content: center;
+            align-items: center;
+
+        .pfp {
+            width: clamp(20vw, 15em, 9em);
+            height: auto;
+            border-radius: 50%;
+            transform: scaleX(-1);
+        }
+    }
 }

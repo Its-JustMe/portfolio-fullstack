@@ -1,0 +1,69 @@
+{
+    "hero": {
+        "name": "Arthur Santos",
+        "profession": "Desenvolvedor Web",
+        "age": 17,
+        "description": "Tenho experiência em programação utilizando HTML, CSS, JavaScript, TypeScript e Python, com foco em Programação Orientada a Objetos (POO); Meu primeiro contato com programação foi aos 14 anos, mas foi aos 16 anos, quando ingressei no curso de Informática para Internet na FIEB, que comecei a me dedicar a essa área de forma mais intensa;",
+        "photos": {
+            "sansPhoto": "/imgs/pfp.jpg",
+            "arthurPhoto": "/imgs/arthur.jpg"
+        },
+        "skills": [
+            {
+                "name": "HTML5",
+                "icon": "",
+                "percent": ""
+            },
+            {
+                "name": "CSS3",
+                "icon": "",
+                "percent": ""
+            },
+            {
+                "name": "JavaScript",
+                "icon": "",
+                "percent": ""
+            },
+            {
+                "name": "TypeScript",
+                "icon": "",
+                "percent": ""
+            },
+            {
+                "name": "NodeJS",
+                "icon": "",
+                "percent": ""
+            },
+            {
+                "name": "Python3",
+                "icon": "",
+                "percent": ""
+            },
+            {
+                "name": "Bootstrap",
+                "icon": "",
+                "percent": ""
+            },
+            {
+                "name": "SASS",
+                "icon": "",
+                "percent": ""
+            },
+            {
+                "name": "Express",
+                "icon": "",
+                "percent": ""
+            },
+            {
+                "name": "Git/Github",
+                "icon": "",
+                "percent": ""
+            },
+            {
+                "name": "MySQL",
+                "icon": "",
+                "percent": ""
+            }
+        ]
+    }
+}

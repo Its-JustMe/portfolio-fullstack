@@ -5,6 +5,7 @@
     height: 100px;
 
     position: fixed;
+    z-index: 111;
     padding: 4px;
 
     display: flex;
@@ -29,7 +30,6 @@
 .menu-wrap {
     width: 100%;
     margin-left: 25px;
-    @include set-large-font();
 }
 
 .menu {

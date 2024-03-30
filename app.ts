@@ -13,7 +13,7 @@ app.set('views', path.join(__dirname, 'src/views'));
 app.use(json());
 app.use(urlencoded({ extended: true }));
 
-app.use('/', router); // Utilize o router importado
+app.use('/', router);
 
 app.listen(port, () => {
   console.log(`Servidor ouvindo na porta ${port}\nhttp://localhost:${port}`);

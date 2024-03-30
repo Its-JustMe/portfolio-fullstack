@@ -26,10 +26,28 @@
         </nav>
     </header>
 
-    <div class="page-content">
-        <div class="introduction">
-        </div>
-    </div>
+    <main class="introduction">
+        <section class="info_container">
+            <div class="img-container animate">
+                <img class="pfp" src="<%= data.hero.photos.sansPhoto %>" alt="Foto de perfil ilustrativa de Arthur Santos">
+            </div>
+            <div class="heading-container">
+                <h1 class="main-heading">
+                    <span class="gradient"><%= data.hero.name %></span>
+                </h1>
+                <h2 class="main-subheading gradient animation-typing"><%= data.hero.profession %></h2>
+                <div class="btn-container">
+                    <a href="./assets/cv/curriculo_ArthurSantos.pdf" download="curriculo_ArthurSantos" class="botao-contato btn-gradient" id="download-cv">
+                        <span lang="en-us">Download</span>
+                        <abbr title="Curriculum vitae - Currículo">C/V</abbr>
+                    </a>
+                    <a href="https://www.linkedin.com/in/arthur-santos-3b61a8267/" target="_blank" class="botao-contato" id="gradient-hover">
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script type="module" src="/js/script.js"></script>
 </body>
