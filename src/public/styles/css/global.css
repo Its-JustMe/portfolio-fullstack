@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: inherit;
+  text-decoration: none;
+  resize: none;
+}
+* :focus {
+  outline: 0;
+}
+
+::selection {
+  background-color: lightblue;
+  color: #000;
+  text-shadow: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6em;
+}
+
+.page-header {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  padding: 4px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+
+.page-header.shown {
+  backdrop-filter: blur(5px);
+  transform: translateY(0px);
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(to right, #228054, #50abf7) 10;
+}
+
+.page-header.hidden {
+  transform: translateY(-100px);
+}
+
+.menu-wrap {
+  width: 100%;
+  margin-left: 25px;
+  font-size: large;
+}
+
+.menu {
+  display: inline-flex;
+  gap: 2.5em;
+}
+
+.menu-item {
+  position: relative;
+  transition: all 0.8s;
+}
+.menu-item :hover {
+  color: #50abf7;
+}
+.menu-item > a {
+  position: relative;
+}
+.menu-item > a::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2.5px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #228054, #50abf7);
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  transition: all 0.5s;
+}
+.menu-item > a:hover::before {
+  width: 100%;
+}
+
+.introduction {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, rgba(11, 38, 85, 0.5058823529), rgba(11, 38, 85, 0.5058823529)), url("https://w.forfun.com/fetch/0d/0df95cbd082b71f74ca3c2b624fae74f.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  background-color: #000;
+  height: 200vh;
+  color: #fff;
+}
+
+/*# sourceMappingURL=global.css.map */

@@ -1,14 +1,20 @@
-import express from 'express';
-const app = express();
-const port = 3000;
+import express, { Application, json, urlencoded } from 'express';
+import path from 'path';
+import router from './src/routes/router';
+
+const app: Application = express();
+const port: number = 3000;
+
+app.use(express.static(path.join(__dirname, 'src/public')));
 
 app.set('view engine', 'ejs');
-app.set('views', 'views');
+app.set('views', path.join(__dirname, 'src/views'));
 
-app.get('/', (req, res) => {
-  res.render('index', { title: 'Express with EJS' });
-});
+app.use(json());
+app.use(urlencoded({ extended: true }));
+
+app.use('/', router); // Utilize o router importado
 
 app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+  console.log(`Servidor ouvindo na porta ${port}\nhttp://localhost:${port}`);
 });

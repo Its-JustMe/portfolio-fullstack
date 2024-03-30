@@ -1,0 +1,71 @@
+@import './mixins.scss';
+
+.page-header {
+    width: 100%;
+    height: 100px;
+
+    position: fixed;
+    padding: 4px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+
+    transition: transform .5s;
+}
+
+.page-header.shown {
+    backdrop-filter: blur(5px);
+    transform: translateY(0px);
+
+    border-bottom: 3px solid transparent;
+    border-image: $gradient-theme 10;
+}
+.page-header.hidden {
+    transform: translateY(-100px);
+}
+
+.menu-wrap {
+    width: 100%;
+    margin-left: 25px;
+    @include set-large-font();
+}
+
+.menu {
+    display: inline-flex;
+    gap: 2.5em;
+}
+
+.menu-item {
+    position: relative;
+    transition: all .8s;
+
+    :hover {
+        color: $primary-theme-color;   
+    }
+
+    >a {
+        position: relative;
+    }
+
+    >a::before {
+        content: '';
+        display: block;
+
+        width: 0px;
+        height: 2.5px;
+        border-radius: 5px;
+
+        background-image: $gradient-theme;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+
+        transition: all .5s;
+    }
+
+    >a:hover::before {
+        width: 100%;
+    }
+}

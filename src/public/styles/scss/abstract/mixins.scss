@@ -1,0 +1,38 @@
+// Declaração de variáveis globais
+$text-color: #fff;
+$primary-theme-color: #50abf7;
+$secondary-theme-color: #228054;
+$heading-size: 1.8em;
+
+$gradient-theme: linear-gradient(to right, $secondary-theme-color, $primary-theme-color);
+
+// Mixins
+
+
+// Fontes
+
+@mixin set-small-font {
+    font-size: small;
+}
+
+@mixin set-large-font {
+    font-size: large;
+}
+
+@mixin set-very-large-font {
+    font-size: x-large;
+}
+
+@mixin set-medium-font {
+    font-size: medium;
+}
+
+// Estilos reutilizáveis
+
+@mixin gradient-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: $gradient-theme;
+}
+

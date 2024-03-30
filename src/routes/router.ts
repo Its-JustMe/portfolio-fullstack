@@ -2,11 +2,14 @@ import express from 'express';
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.send('Rota principal');
+  res.render(
+    'pages/index', 
+    {
+      erros: null,
+      dados: null
+    }
+  );
 });
 
-router.get('/about', (req, res) => {
-  res.send('Sobre nós');
-});
 
 export default router;

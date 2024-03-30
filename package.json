@@ -2,12 +2,12 @@
   "name": "portfolio-fullstack",
   "version": "1.0.0",
   "description": "Portfólio pessoal do desenvolvedor fullstack Arthur Santos,.",
-  "main": "index.js",
+  "main": "app.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "convert-style": "sass --watch ./src/public/styles/scss/global.scss ./src/public/styles/css/global.css"
   },
   "keywords": [],
-  "author": "",
+  "author": "Arthur Santos",
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.21",
