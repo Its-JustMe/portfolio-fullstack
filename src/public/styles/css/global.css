@@ -42,6 +42,24 @@ html {
   border-radius: 6px;
 }
 
+body {
+  font-size: x-large;
+}
+body p {
+  font-size: large;
+}
+@media screen and (max-width: 64em) {
+  body p {
+    font-size: medium;
+  }
+}
+body .card-skill {
+  width: 115px;
+}
+body .skills-container {
+  padding: 0 2em 0 2em;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -59,11 +77,11 @@ html {
 }
 
 .main-heading {
-  font-size: clamp(4vw, 3.5em, 3em);
+  font-size: clamp(3vw, 3.5em, 3em);
 }
 
 .main-subheading {
-  font-size: clamp(1vw, 2.2em, 1.8em);
+  font-size: clamp(1vw, 2em, 1.8em);
 }
 
 .gradient {
@@ -80,9 +98,9 @@ html {
 .main-subheading.animation-typing {
   width: 12ch;
   white-space: nowrap;
-  animation: um6elc4 4.5s infinite;
+  animation: u79onyb 4.5s infinite;
 }
-@keyframes um6elc4 {
+@keyframes u79onyb {
   from {
     width: 0;
   }
@@ -91,13 +109,50 @@ html {
   }
 }
 
-body {
-  font-size: x-large;
+.page-section {
+  width: 100vw;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 0.5em;
 }
-@media screen and (max-width: 64em) {
-  body {
-    font-size: large;
-  }
+
+.paragraph {
+  color: #808080;
+  width: 70%;
+  text-align: justify;
+}
+
+.subheading {
+  font-size: clamp(1vw, 2em, 1.8em);
+  text-align: center;
+}
+
+.card-skill {
+  flex-basis: clamp(10vw, 140px, 120px);
+  width: fit-content;
+  height: 140px;
+  text-align: center;
+  padding: 0.5em;
+  color: #63b6fa;
+  background: #222;
+  border-top-left-radius: 20px;
+  border-bottom: 4px solid #63b6fa;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.card-skill > span {
+  font-family: Arial;
+  font-size: small;
+}
+.card-skill > i {
+  font-size: clamp(1vw, 2em, 1.8em);
+}
+
+.card-skill:hover {
+  color: #f388f3;
+  border-color: #f388f3;
 }
 
 .page-header {
@@ -191,9 +246,27 @@ body {
 
 body {
   background-color: #000;
-  height: 200vh;
   color: #fff;
   font-family: "Typo Formal";
+  display: flex;
+  flex-direction: column;
+  gap: 3.5em;
+}
+
+.about, .skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.skills-container {
+  padding: 0 5em 0 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5em;
 }
 
 /*# sourceMappingURL=global.css.map */

@@ -1,11 +1,12 @@
 // Declaração de variáveis globais
 $text-color: #fff;
+$paragraph-color: #808080;
 $primary-theme-color: #63b6fa;
 $secondary-theme-color: #f388f3;
 
 $default-font: 'Typo Formal';
-$heading-size: clamp(4vw, 3.5em, 3em);
-$subheading-size: clamp(1vw, 2.2em, 1.8em);
+$heading-size: clamp(3vw, 3.5em, 3em);
+$subheading-size: clamp(1vw, 2em, 1.8em);
 
 $gradient-theme: linear-gradient(to right, $primary-theme-color, $secondary-theme-color);
 

@@ -1,9 +1,11 @@
 {
     "hero": {
         "name": "Arthur Santos",
-        "profession": "Desenvolvedor Web",
+        "subject": "Desenvolvedor Web",
         "age": 17,
-        "description": "Tenho experiência em programação utilizando HTML, CSS, JavaScript, TypeScript e Python, com foco em Programação Orientada a Objetos (POO); Meu primeiro contato com programação foi aos 14 anos, mas foi aos 16 anos, quando ingressei no curso de Informática para Internet na FIEB, que comecei a me dedicar a essa área de forma mais intensa;",
+        "description": 
+        "com experiência em programação utilizando HTML, CSS/SASS, JavaScript/TypeScript e NodeJS e com conhecimento em Programação Orientada a Objetos (POO); Meu primeiro contato com programação foi aos 14 anos, mas foi aos 16 que comecei a me dedicar a essa área de forma mais intensa  quando ingressei no curso de Informática para Internet na",
+        "education": "FIEB",
         "photos": {
             "sansPhoto": "/imgs/pfp.jpg",
             "arthurPhoto": "/imgs/arthur.jpg"
@@ -12,57 +14,52 @@
             {
                 "name": "HTML5",
                 "icon": "devicon-html5-plain",
-                "percent": "80%"
+                "percent": "90%"
             },
             {
                 "name": "CSS3",
-                "icon": "",
-                "percent": ""
+                "icon": "devicon-css3-plain",
+                "percent": "85%"
             },
             {
                 "name": "JavaScript",
-                "icon": "",
-                "percent": ""
+                "icon": "devicon-javascript-plain",
+                "percent": "45%"
             },
             {
                 "name": "TypeScript",
-                "icon": "",
-                "percent": ""
+                "icon": "devicon-typescript-plain",
+                "percent": "30%"
             },
             {
                 "name": "NodeJS",
-                "icon": "",
-                "percent": ""
-            },
-            {
-                "name": "Python3",
-                "icon": "",
-                "percent": ""
+                "icon": "devicon-nodejs-plain",
+                "percent": "40%"
             },
             {
                 "name": "Bootstrap",
-                "icon": "",
-                "percent": ""
+                "icon": "devicon-bootstrap-plain",
+                "percent": "25%"
             },
             {
                 "name": "SASS",
-                "icon": "",
-                "percent": ""
+                "icon": "devicon-sass-original",
+                "percent": "40%"
             },
             {
                 "name": "Express",
-                "icon": "",
-                "percent": ""
+                "icon": "devicon-express-original",
+                "percent": "45%"
             },
             {
                 "name": "Git/Github",
-                "icon": "",
-                "percent": ""
+                "icon": "devicon-git-plain",
+                "percent": "40%"
             },
             {
                 "name": "MySQL",
-                "icon": "",
-                "percent": ""
+                "icon": "devicon-mysql-plain-wordmark",
+                "percent": "30%"
             }
         ]
     }

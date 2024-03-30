@@ -24,3 +24,58 @@
     white-space: nowrap;
     @include typing-animation(12ch);
 }
+
+.page-section {
+    width: 100vw;
+    min-height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    padding: 0.5em;
+}
+
+.paragraph {
+    color: $paragraph-color;
+    width: 70%;
+    text-align: justify;
+}
+
+.subheading {
+    font-size: $subheading-size;
+    text-align: center;
+}
+
+.card-skill {
+    flex-basis: clamp(10vw, 140px, 120px);
+
+    width: fit-content;
+    height: 140px;
+    text-align: center;
+
+    padding: .5em;
+
+    color: $primary-theme-color;
+
+    background: #222;
+    border-top-left-radius: 20px;
+    border-bottom: 4px solid $primary-theme-color;
+
+    transition: all .5s;
+    cursor: pointer;
+
+    >span {
+        font-family: Arial;
+        @include set-small-font();
+    }
+
+    >i {
+        font-size: $subheading-size
+    }
+}
+
+.card-skill:hover {
+    color: $secondary-theme-color;
+    border-color: $secondary-theme-color;
+}

@@ -1,7 +1,21 @@
 body {
     @include set-very-large-font();
 
-    @media screen and (max-width: 64em) {
+    p {
         @include set-large-font();
+    }
+
+    @media screen and (max-width: 64em) {
+        p {
+            @include set-medium-font();
+        }
+    }
+
+    .card-skill {
+        width: 115px;
+    }
+
+    .skills-container {
+        padding: 0 2em 0 2em;
     }
 }

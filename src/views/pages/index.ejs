@@ -38,7 +38,7 @@
                 <h1 class="main-heading">
                     <span class="gradient"><%= data.hero.name %></span>
                 </h1>
-                <h2 class="main-subheading gradient animation-typing"><%= data.hero.profession %></h2>
+                <h2 class="main-subheading gradient animation-typing"><%= data.hero.subject %></h2>
                 <div class="btn-container">
                     <a href="./assets/cv/curriculo_ArthurSantos.pdf" download="curriculo_ArthurSantos" class="botao-contato btn-gradient" id="download-cv">
                         <span lang="en-us">Download</span>
@@ -51,17 +51,30 @@
             </div>
         </section>
     </main>
-    <!--
-    <% if (data && data.hero && data.hero.skills) { %>
-        <% data.hero.skills.forEach(skill => { %>
-            <div>
-                <p><%= skill.name %></p>
-                <i class="<%= skill.icon %>"></i>
-                <p><%= skill.percent %></p>
-            </div>
-        <% }); %>
-    <% } %>
-    -->
+
+    <section class="page-section about">
+        <h3 class="subheading">Sobre mim</h3>
+        <p class="paragraph">
+            <%= data.hero.subject %> 
+            <%= data.hero.description %> 
+            <abbr title="Fundação Instituto de Educação de Barueri"><%= data.hero.education %></abbr>;
+        </p>
+    </section>
+
+    <section class="page-section skills">
+        <h3 class="subheading">Conhecimentos</h3>
+        <div class="skills-container">
+            <% if (data && data.hero && data.hero.skills) { %>
+                <% data.hero.skills.forEach(skill => { %>
+                    <div class="card-skill">
+                        <i class="<%= skill.icon %>"></i> <br>
+                        <span><%= skill.name %></span> <br>
+                        <span><%= skill.percent %></span>
+                    </div>
+                <% }); %>
+            <% } %>
+        </div>
+    </section>
     <script type="module" src="/js/script.js"></script>
 </body>
 </html>
