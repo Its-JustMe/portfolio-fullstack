@@ -7,17 +7,20 @@
     <link rel="stylesheet" href="/styles/css/global.css" type="text/css">
     <!--Link DevIcon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <title>Arthur Santos | Portfolio Website</title>
+    <title><%= data.title %></title>
 </head>
 <body>
     <header class="page-header">
         <nav class="menu-wrap">
             <ul class="menu">
                 <li class="menu-item">
-                    <a href="#">Sobre</a>
+                    <a href="#about">Sobre</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#">Conhecimentos</a>
+                    <a href="#skills">Conhecimentos</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Projetos</a>
                 </li>
                 <li class="menu-item">
                     <a href="#">Serviços</a>
@@ -40,19 +43,21 @@
                 </h1>
                 <h2 class="main-subheading gradient animation-typing"><%= data.hero.subject %></h2>
                 <div class="btn-container">
-                    <a href="./assets/cv/curriculo_ArthurSantos.pdf" download="curriculo_ArthurSantos" class="botao-contato btn-gradient" id="download-cv">
+                    <a href="./assets/cv/curriculo_ArthurSantos.pdf" download="curriculo_ArthurSantos" class="button-cv" id="download-cv">
                         <span lang="en-us">Download</span>
                         <abbr title="Curriculum vitae - Currículo">C/V</abbr>
                     </a>
-                    <a href="https://www.linkedin.com/in/arthur-santos-3b61a8267/" target="_blank" class="botao-contato" id="gradient-hover">
-                        LinkedIn
+                    <% data.hero.social.forEach(item => { %>
+                    <a href="<%= item.url %>" class="social-link">
+                        <i class="<%= item.icon %>"></i>
                     </a>
+                   <%});%>
                 </div>
             </div>
         </section>
     </main>
 
-    <section class="page-section about">
+    <section class="page-section about" id="about">
         <h3 class="subheading">Sobre mim</h3>
         <p class="paragraph">
             <%= data.hero.subject %> 
@@ -61,18 +66,18 @@
         </p>
     </section>
 
-    <section class="page-section skills">
+    <section class="page-section skills" id="skills">
         <h3 class="subheading">Conhecimentos</h3>
         <div class="skills-container">
-            <% if (data && data.hero && data.hero.skills) { %>
-                <% data.hero.skills.forEach(skill => { %>
-                    <div class="card-skill">
-                        <i class="<%= skill.icon %>"></i> <br>
-                        <span><%= skill.name %></span> <br>
-                        <span><%= skill.percent %></span>
-                    </div>
-                <% }); %>
-            <% } %>
+        <% if (data && data.hero && data.hero.skills) { %>
+            <% data.hero.skills.forEach(skill => { %>
+            <div class="card-skill">
+                <i class="<%= skill.icon %>"></i> <br>
+                <span><%= skill.name %></span> <br>
+                <span><%= skill.percent %></span>
+            </div>
+            <% }); %>
+        <% } %>
         </div>
     </section>
     <script type="module" src="/js/script.js"></script>

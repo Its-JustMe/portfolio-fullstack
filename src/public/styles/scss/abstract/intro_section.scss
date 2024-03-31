@@ -6,6 +6,7 @@
         url('../../../imgs/wallpaper.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 
     .info_container {
         width: 100vw;
@@ -26,7 +27,7 @@
             align-items: center;
 
         .pfp {
-            width: clamp(20vw, 15em, 9em);
+            width: clamp(20vw, 15em, 7.5em);
             height: auto;
             border-radius: 50%;
             transform: scaleX(-1);

@@ -1,13 +1,32 @@
 body {
     @include set-very-large-font();
 
-    p {
-        @include set-large-font();
+    @media screen and (max-width: 64em) {
+        .paragraph {
+            @include set-medium-font();
+        }
+
+        .main-heading {
+            text-align: center;
+        }
+
+        .main-subheading {
+            margin: auto;
+        }
     }
 
-    @media screen and (max-width: 64em) {
-        p {
-            @include set-medium-font();
+    @media screen and (max-width: 48em) {
+        @include set-large-font();
+        
+        .button-cv {
+            width: 220px;
+        }
+    }
+
+    @media screen and (max-width: 31em) {
+        @include set-medium-font();
+        .button-cv {
+            width: 180px;
         }
     }
 
