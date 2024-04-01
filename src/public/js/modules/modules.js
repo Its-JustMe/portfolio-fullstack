@@ -1,5 +1,4 @@
 let last_scroll_top = 0; 
-
 export const changeNavbarOnScroll = (header) => {
     const current_scroll = window.scrollY;
 
