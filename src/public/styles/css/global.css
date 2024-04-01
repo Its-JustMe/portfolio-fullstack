@@ -87,6 +87,16 @@ body .skills-container {
     opacity: 1;
   }
 }
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100vw);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .small {
   font-size: small;
 }
@@ -113,9 +123,9 @@ body .skills-container {
 .main-subheading.animation-typing {
   width: 12ch;
   white-space: nowrap;
-  animation: u79opsx 4.5s infinite;
+  animation: unmdjbj 4.5s infinite;
 }
-@keyframes u79opsx {
+@keyframes unmdjbj {
   from {
     width: 0;
   }
@@ -142,6 +152,18 @@ body .skills-container {
 .subheading {
   font-size: clamp(3.5vw, 2em, 1.8em);
   text-align: center;
+}
+
+.subheading[data-animate=true] {
+  animation: unmdjc1 4.5s alternate;
+}
+@keyframes unmdjc1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .card-skill {
@@ -325,6 +347,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 3.5em;
+}
+
+.about[data-animate=true] {
+  animation: fadeIn 1.5s;
+}
+
+.skills {
+  animation: slideLeft 0.8s;
 }
 
 .about, .skills {

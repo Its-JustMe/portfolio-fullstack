@@ -18,7 +18,7 @@
 .main-subheading.animation-typing {
     width: 12ch; 
     white-space: nowrap;
-    @include typing-animation(12ch);
+    @include typing-animation(12ch, infinite);
 }
 
 .page-section {
@@ -41,6 +41,9 @@
 .subheading {
     font-size: $subheading-size;
     text-align: center;
+}
+.subheading[data-animate="true"] {
+    @include typing-animation(100%, alternate);
 }
 
 .card-skill {

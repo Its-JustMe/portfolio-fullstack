@@ -10,6 +10,13 @@ body {
         gap: 3.5em;
 }
 
+.about[data-animate="true"] {
+    animation: fadeIn 1.5s;
+}
+.skills {
+    animation: slideLeft .8s;
+}
+
 .about, .skills {
     display: flex;
         flex-direction: column;
