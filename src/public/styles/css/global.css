@@ -123,9 +123,9 @@ body .skills-container {
 .main-subheading.animation-typing {
   width: 12ch;
   white-space: nowrap;
-  animation: unmdjbj 4.5s infinite;
+  animation: u3ap3n2 4.5s infinite;
 }
-@keyframes unmdjbj {
+@keyframes u3ap3n2 {
   from {
     width: 0;
   }
@@ -155,9 +155,9 @@ body .skills-container {
 }
 
 .subheading[data-animate=true] {
-  animation: unmdjc1 4.5s alternate;
+  animation: u3ap3ny 4.5s alternate;
 }
-@keyframes unmdjc1 {
+@keyframes u3ap3ny {
   from {
     width: 0;
   }
@@ -167,10 +167,10 @@ body .skills-container {
 }
 
 .card-skill {
-  flex-basis: clamp(14vw, 140px, 120px);
+  flex-basis: clamp(13vw, 140px, 120px);
   width: fit-content;
   min-height: 95px;
-  max-height: 140px;
+  max-height: 160px;
   overflow: hidden;
   text-align: center;
   padding: 0.5em;
@@ -211,7 +211,7 @@ body .skills-container {
   transition: color 0.8s;
 }
 .btn-container i:hover {
-  color: #63b6fa;
+  color: #f388f3;
 }
 
 .button-cv {
@@ -346,7 +346,7 @@ body {
   font-family: "Typo Formal";
   display: flex;
   flex-direction: column;
-  gap: 3.5em;
+  gap: 1.5em;
 }
 
 .about[data-animate=true] {

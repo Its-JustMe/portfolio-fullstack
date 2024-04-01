@@ -39,18 +39,24 @@
             </div>
             <div class="heading-container">
                 <h1 class="main-heading">
-                    <span class="gradient"><%= data.hero.name %></span>
+                    <span class="gradient">
+                        <%= data.hero.name %>
+                    </span>
                 </h1>
-                <h2 class="main-subheading gradient animation-typing"><%= data.hero.subject %></h2>
+                <h2 class="main-subheading gradient animation-typing">
+                    <%= data.hero.subject %>
+                </h2>
                 <div class="btn-container">
                     <a href="./assets/cv/curriculo_ArthurSantos.pdf" download="curriculo_ArthurSantos" class="button-cv" id="download-cv">
-                        <span lang="en-us">Download</span>
+                        <span lang="en-us">
+                            Download
+                        </span>
                         <abbr title="Curriculum vitae - Currículo">C/V</abbr>
                     </a>
                     <% data.hero.social.forEach(item => { %>
-                    <a href="<%= item.url %>" class="social-link">
-                        <i class="<%= item.icon %>"></i>
-                    </a>
+                        <a href="<%= item.url %>" class="social-link">
+                            <i class="<%= item.icon %>"></i>
+                        </a>
                    <%});%>
                 </div>
             </div>
@@ -69,15 +75,15 @@
     <section class="page-section skills" id="skills">
         <h3 class="subheading">Conhecimentos</h3>
         <div class="skills-container">
-        <% if (data && data.hero && data.hero.skills) { %>
-            <% data.hero.skills.forEach(skill => { %>
-            <div class="card-skill">
-                <i class="<%= skill.icon %>"></i> <br>
-                <span><%= skill.name %></span> <br>
-                <span><%= skill.percent %></span>
-            </div>
-            <% }); %>
-        <% } %>
+            <% if (data && data.hero && data.hero.skills) { %>
+                <% data.hero.skills.forEach(skill => { %>
+                <div class="card-skill">
+                    <i class="<%= skill.icon %>"></i> <br>
+                    <span><%= skill.name %></span> <br>
+                    <span><%= skill.percent %></span>
+                </div>
+                <% }); %>
+            <% } %>
         </div>
     </section>
     <script type="module" src="/js/script.js"></script>

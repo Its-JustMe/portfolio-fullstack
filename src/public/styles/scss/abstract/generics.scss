@@ -47,11 +47,11 @@
 }
 
 .card-skill {
-    flex-basis: clamp(14vw, 140px, 120px);
+    flex-basis: clamp(13vw, 140px, 120px);
 
     width: fit-content;
     min-height: 95px;
-    max-height: 140px;
+    max-height: 160px;
     overflow: hidden;
     text-align: center;
 
@@ -100,7 +100,7 @@
         transition: color .8s;
     }
     i:hover {
-        color: $primary-theme-color;
+        color: $secondary-theme-color;
     }
 }
 
