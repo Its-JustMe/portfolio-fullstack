@@ -7,7 +7,7 @@ body {
 
     display: flex;
         flex-direction: column;
-        gap: 1.5em;
+        gap: 5em;
 }
 
 .about[data-animate="true"] {
@@ -30,5 +30,5 @@ body {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        gap: 1.5em;
+        gap: 1.8em;
 }

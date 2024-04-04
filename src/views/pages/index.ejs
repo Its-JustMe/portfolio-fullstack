@@ -20,7 +20,7 @@
                     <a href="#skills">Conhecimentos</a>
                 </li>
                 <li class="menu-item">
-                    <a href="#">Projetos</a>
+                    <a href="#projects">Projetos</a>
                 </li>
                 <li class="menu-item">
                     <a href="#">Serviços</a>
@@ -47,7 +47,7 @@
                     <%= data.hero.subject %>
                 </h2>
                 <div class="btn-container">
-                    <a href="./assets/cv/curriculo_ArthurSantos.pdf" download="curriculo_ArthurSantos" class="button-cv" id="download-cv">
+                    <a href="./assets/cv/curriculo_ArthurSantos.pdf" download="curriculo_ArthurSantos" class="button-link" id="download-cv">
                         <span lang="en-us">
                             Download
                         </span>
@@ -72,20 +72,11 @@
         </p>
     </section>
 
-    <section class="page-section skills" id="skills">
-        <h3 class="subheading">Conhecimentos</h3>
-        <div class="skills-container">
-            <% if (data && data.hero && data.hero.skills) { %>
-                <% data.hero.skills.forEach(skill => { %>
-                <div class="card-skill">
-                    <i class="<%= skill.icon %>"></i> <br>
-                    <span><%= skill.name %></span> <br>
-                    <span><%= skill.percent %></span>
-                </div>
-                <% }); %>
-            <% } %>
-        </div>
-    </section>
+    <% for (let section of partials) { %>
+        <%- include(`../partial/${section}`) %>
+    <%}%>
+
+    
     <script type="module" src="/js/script.js"></script>
 </body>
 </html>

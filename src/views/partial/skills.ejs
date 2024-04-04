@@ -1,0 +1,14 @@
+<section class="page-section skills" id="skills">
+    <h3 class="subheading">Conhecimentos</h3>
+    <div class="skills-container">
+        <% if (data && data.hero && data.hero.skills) { %>
+            <% data.hero.skills.forEach(skill => { %>
+            <div class="card-skill">
+                <i class="<%= skill.icon %>"></i> <br>
+                <span><%= skill.name %></span> <br>
+                <span><%= skill.percent %></span>
+            </div>
+            <% }); %>
+        <% } %>
+    </div>
+</section>

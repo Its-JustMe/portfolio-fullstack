@@ -1,0 +1,57 @@
+.card-skill {
+    flex-basis: clamp(13vw, 140px, 120px);
+
+    width: fit-content;
+    min-height: 95px;
+    max-height: 160px;
+    overflow: hidden;
+    text-align: center;
+
+    padding: .5em;
+
+    color: $primary-theme-color;
+
+    background: #222;
+    border-radius: 20px 20px 0 0;
+    border-bottom: 4px solid $primary-theme-color;
+
+    transition: all .5s;
+    cursor: pointer;
+
+    >span {
+        font-family: Arial;
+        font-weight: bold;
+        text-transform: uppercase;
+        @include set-medium-font();
+    }
+
+    >i {
+        font-size: $subheading-size
+    }
+}
+
+.card-skill:hover {
+    color: $secondary-theme-color;
+    border-color: $secondary-theme-color;
+}
+
+.btn-container {
+    width: 100%;
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+
+    position: relative;
+
+    i {
+        color: $text-color;
+        transition: color .8s;
+    }
+    i:hover {
+        color: $secondary-theme-color;
+    }
+}

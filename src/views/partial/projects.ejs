@@ -1,0 +1,27 @@
+<section class="page-section projects" id="projects">
+    <h3 class="subheading">Projetos</h3>
+    <div class="project-list">
+        <% if (data && data.hero && data.hero.projects) { %>
+            <% data.hero.projects.forEach(project => { %>
+            <div class="project-container">
+                <img class="img-projeto" src="<%= project.imgPath %>" alt="Imagem do layout do projeto <%= project.name %>">
+                <div class="project-info">
+                    <div>
+                        <h4 class="project-title"><%= project.name %></h4> <br>
+                        <p class="project-langs">
+                            <% project.langIcons.forEach(icon => { %>
+                                <i class="<%= icon %>"></i>
+                            <%}); %>
+                        </p>
+                    </div>
+
+                    <div class="link-container">
+                        <a class="button-link" href="<%= project.url_website %> project-button">Acessar Site</a>
+                        <a class="button-link" href="<%= project.url_repository %> project-button">Acessar Código</a>
+                    </div>
+                </div>
+            </div>
+            <% }); %>
+        <% } %>
+    </div>
+</section>

@@ -62,7 +62,7 @@
                 "percent": "45%"
             },
             {
-                "name": "Git/Github",
+                "name": "Git",
                 "icon": "devicon-git-plain",
                 "percent": "40%"
             },
@@ -70,6 +70,52 @@
                 "name": "MySQL",
                 "icon": "devicon-mysql-plain-wordmark",
                 "percent": "30%"
+            }
+        ],
+        "projects": [
+            {
+                "name": "QuímicaFácil",
+                "imgPath": "https://its-justme.github.io/portfolio-v2/assets/imgs/projects_imgs/quimicafacil.png",
+                "url_website": "https://quimicafacil.vercel.app/",
+                "url_repository": "https://github.com/Its-JustMe/quimicafacil",
+                "langIcons": [
+                    "devicon-html5-plain gradient-icon", 
+                    "devicon-css3-plain gradient-icon",
+                    "devicon-javascript-plain gradient-icon"
+                ]
+            },
+            {
+                "name": "QuímicaFácil",
+                "imgPath": "https://its-justme.github.io/portfolio-v2/assets/imgs/projects_imgs/quimicafacil.png",
+                "url_website": "https://quimicafacil.vercel.app/",
+                "url_repository": "https://github.com/Its-JustMe/quimicafacil",
+                "langIcons": [
+                    "devicon-html5-plain gradient-icon", 
+                    "devicon-css3-plain gradient-icon",
+                    "devicon-javascript-plain gradient-icon"
+                ]
+            },
+            {
+                "name": "QuímicaFácil",
+                "imgPath": "https://its-justme.github.io/portfolio-v2/assets/imgs/projects_imgs/quimicafacil.png",
+                "url_website": "https://quimicafacil.vercel.app/",
+                "url_repository": "https://github.com/Its-JustMe/quimicafacil",
+                "langIcons": [
+                    "devicon-html5-plain gradient-icon", 
+                    "devicon-css3-plain gradient-icon",
+                    "devicon-javascript-plain gradient-icon"
+                ]
+            },
+            {
+                "name": "QuímicaFácil",
+                "imgPath": "https://its-justme.github.io/portfolio-v2/assets/imgs/projects_imgs/quimicafacil.png",
+                "url_website": "https://quimicafacil.vercel.app/",
+                "url_repository": "https://github.com/Its-JustMe/quimicafacil",
+                "langIcons": [
+                    "devicon-html5-plain gradient-icon", 
+                    "devicon-css3-plain gradient-icon",
+                    "devicon-javascript-plain gradient-icon"
+                ]
             }
         ]
     }
