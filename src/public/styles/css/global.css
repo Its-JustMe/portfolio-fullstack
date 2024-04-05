@@ -123,9 +123,9 @@ body .skills-container {
 .main-subheading.animation-typing {
   width: 12ch;
   white-space: nowrap;
-  animation: uwmhts7 4.5s infinite;
+  animation: ufdluv4 4.5s infinite;
 }
-@keyframes uwmhts7 {
+@keyframes ufdluv4 {
   from {
     width: 0;
   }
@@ -155,9 +155,9 @@ body .skills-container {
 }
 
 .subheading[data-animate=true] {
-  animation: uwmhtsg 4.5s alternate;
+  animation: ufdluvn 4.5s alternate;
 }
-@keyframes uwmhtsg {
+@keyframes ufdluvn {
   from {
     width: 0;
   }
@@ -382,6 +382,7 @@ body .skills-container {
 }
 .projects .link-container {
   transition: visibility 0.8s;
+  margin-top: 1em;
 }
 .projects .link-container .button-link {
   font-size: 0.8em;
