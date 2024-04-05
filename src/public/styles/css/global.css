@@ -123,9 +123,9 @@ body .skills-container {
 .main-subheading.animation-typing {
   width: 12ch;
   white-space: nowrap;
-  animation: uiefmfd 4.5s infinite;
+  animation: u6ivgxb 4.5s infinite;
 }
-@keyframes uiefmfd {
+@keyframes u6ivgxb {
   from {
     width: 0;
   }
@@ -155,9 +155,9 @@ body .skills-container {
 }
 
 .subheading[data-animate=true] {
-  animation: uiefmfj 4.5s alternate;
+  animation: u6ivgxg 4.5s alternate;
 }
-@keyframes uiefmfj {
+@keyframes u6ivgxg {
   from {
     width: 0;
   }
