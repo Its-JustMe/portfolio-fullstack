@@ -1,4 +1,6 @@
-{
+import { Data } from './interfaces';
+
+export const data: Data = {
     "title": "Arthur Santos | Portfolio Website",
     "hero": {
         "name": "Arthur Santos",
@@ -13,13 +15,10 @@
                 "url": "https://github.com/Its-JustMe"
             }
         ],
-        "description": 
-        "com experiência em programação utilizando HTML, CSS/SASS, JavaScript/TypeScript e NodeJS e com conhecimento em Programação Orientada a Objetos (POO); Meu primeiro contato com programação foi aos 14 anos, mas foi aos 16 que comecei a me dedicar a essa área de forma mais intensa  quando ingressei no curso de Informática para Internet na",
+        "description": "com experiência em programação utilizando HTML, CSS/SASS, JavaScript/TypeScript e NodeJS e com conhecimento em Programação Orientada a Objetos (POO); Meu primeiro contato com programação foi aos 14 anos, mas foi aos 16 que comecei a me dedicar a essa área de forma mais intensa  quando ingressei no curso de Informática para Internet na",
         "education": "FIEB",
-        "photos": {
-            "sansPhoto": "/imgs/pfp.jpg",
-            "arthurPhoto": "/imgs/foto_arthur.jpeg"
-        },
+        "photo": "/imgs/foto_arthur.jpeg",
+        
         "skills": [
             {
                 "name": "HTML5",
@@ -76,8 +75,8 @@
             {
                 "name": "QuímicaFácil",
                 "imgPath": "https://its-justme.github.io/portfolio-v2/assets/imgs/projects_imgs/quimicafacil.png",
-                "url_website": "https://quimicafacil.vercel.app/",
-                "url_repository": "https://github.com/Its-JustMe/quimicafacil",
+                "urlWebsite": "https://quimicafacil.vercel.app/",
+                "urlRepository": "https://github.com/Its-JustMe/quimicafacil",
                 "langIcons": [
                     "devicon-html5-plain gradient-icon", 
                     "devicon-css3-plain gradient-icon",
@@ -87,8 +86,8 @@
             {
                 "name": "QuímicaFácil",
                 "imgPath": "https://its-justme.github.io/portfolio-v2/assets/imgs/projects_imgs/quimicafacil.png",
-                "url_website": "https://quimicafacil.vercel.app/",
-                "url_repository": "https://github.com/Its-JustMe/quimicafacil",
+                "urlWebsite": "https://quimicafacil.vercel.app/",
+                "urlRepository": "https://github.com/Its-JustMe/quimicafacil",
                 "langIcons": [
                     "devicon-html5-plain gradient-icon", 
                     "devicon-css3-plain gradient-icon",
@@ -98,8 +97,8 @@
             {
                 "name": "QuímicaFácil",
                 "imgPath": "https://its-justme.github.io/portfolio-v2/assets/imgs/projects_imgs/quimicafacil.png",
-                "url_website": "https://quimicafacil.vercel.app/",
-                "url_repository": "https://github.com/Its-JustMe/quimicafacil",
+                "urlWebsite": "https://quimicafacil.vercel.app/",
+                "urlRepository": "https://github.com/Its-JustMe/quimicafacil",
                 "langIcons": [
                     "devicon-html5-plain gradient-icon", 
                     "devicon-css3-plain gradient-icon",
@@ -109,8 +108,8 @@
             {
                 "name": "QuímicaFácil",
                 "imgPath": "https://its-justme.github.io/portfolio-v2/assets/imgs/projects_imgs/quimicafacil.png",
-                "url_website": "https://quimicafacil.vercel.app/",
-                "url_repository": "https://github.com/Its-JustMe/quimicafacil",
+                "urlWebsite": "https://quimicafacil.vercel.app/",
+                "urlRepository": "https://github.com/Its-JustMe/quimicafacil",
                 "langIcons": [
                     "devicon-html5-plain gradient-icon", 
                     "devicon-css3-plain gradient-icon",
@@ -119,4 +118,4 @@
             }
         ]
     }
-}
+};

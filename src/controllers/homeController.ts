@@ -1,4 +1,4 @@
-import * as jsonData from '../data/data.json';
+import { data } from '../helpers/helper';
 import { Request, Response } from 'express';
 
 export default {
@@ -12,7 +12,7 @@ export default {
       'pages/index', 
       {
         errors: null,
-        data: jsonData,
+        data: data,
         partials: [
           'skills',
           'projects'
