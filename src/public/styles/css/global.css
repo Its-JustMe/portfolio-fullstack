@@ -123,9 +123,9 @@ body .skills-container {
 .main-subheading.animation-typing {
   width: 12ch;
   white-space: nowrap;
-  animation: u6ivgxb 4.5s infinite;
+  animation: uwmhts7 4.5s infinite;
 }
-@keyframes u6ivgxb {
+@keyframes uwmhts7 {
   from {
     width: 0;
   }
@@ -155,9 +155,9 @@ body .skills-container {
 }
 
 .subheading[data-animate=true] {
-  animation: u6ivgxg 4.5s alternate;
+  animation: uwmhtsg 4.5s alternate;
 }
-@keyframes u6ivgxg {
+@keyframes uwmhtsg {
   from {
     width: 0;
   }
@@ -378,7 +378,7 @@ body .skills-container {
 .projects .project-info {
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 90px;
 }
 .projects .link-container {
   transition: visibility 0.8s;
@@ -393,6 +393,7 @@ body .skills-container {
   background-color: rgba(0, 0, 0, 0.7568627451);
   transform: translateY(-100%);
   width: 100%;
+  padding: 5px;
 }
 .projects .project-container:hover .link-container {
   visibility: visible;
