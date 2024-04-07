@@ -46,7 +46,7 @@
     @include typing-animation(100%, alternate);
 }
 
-.button-link {
+.gradient-btn {
     width: 280px;
 
     padding: 10px;
@@ -68,7 +68,7 @@
     border: 2px solid $text-color;
 }
 
-.button-link:before {
+.gradient-btn:before {
     content: '';
 
     position: absolute;
@@ -83,7 +83,7 @@
     background-image: $gradient-theme;
     transition: all .5s;
 }
-.button-link:hover::before {
+.gradient-btn:hover::before {
     width: 100%;
 }
 

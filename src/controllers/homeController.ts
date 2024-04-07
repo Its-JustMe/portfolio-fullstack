@@ -1,5 +1,8 @@
-import { data } from '../helpers/helper';
+import { data } from '../helpers/data';
+import { formData } from '../helpers/interfaces';
+import { homeModel } from '../models/homeModels';
 import { Request, Response } from 'express';
+import { body, validationResult } from 'express-validator'
 
 export default {
   /**
@@ -15,9 +18,19 @@ export default {
         data: data,
         partials: [
           'skills',
-          'projects'
+          'projects',
+          'form'
         ]
       }
     );
+  },
+  /** 
+   * Função que valida o formulário de email
+   * @param req Request
+   * @param res Response
+  */
+  validateForm: (req: Request, res: Response) => {
+    const errors = validationResult(req);
+    const { email_client, email_subject, email_msg }: formData = req.body;
   }
 };

@@ -9,6 +9,7 @@ export interface Data {
             "url": string;
         }[];
 
+        "email": string;
         "description": () => string;
         "education": string;
         "photo": string;
@@ -27,4 +28,10 @@ export interface Data {
             "langIcons": string[];
         }[];
     };
+}
+
+export interface formData {
+    email_client: string;
+    email_subject: string;
+    email_msg: string;
 }

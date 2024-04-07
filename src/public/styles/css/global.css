@@ -123,9 +123,9 @@ body .skills-container {
 .main-subheading.animation-typing {
   width: 12ch;
   white-space: nowrap;
-  animation: ufdluv4 4.5s infinite;
+  animation: u8kr5p4 4.5s infinite;
 }
-@keyframes ufdluv4 {
+@keyframes u8kr5p4 {
   from {
     width: 0;
   }
@@ -155,9 +155,9 @@ body .skills-container {
 }
 
 .subheading[data-animate=true] {
-  animation: ufdluvn 4.5s alternate;
+  animation: u8kr5pa 4.5s alternate;
 }
-@keyframes ufdluvn {
+@keyframes u8kr5pa {
   from {
     width: 0;
   }
@@ -166,7 +166,7 @@ body .skills-container {
   }
 }
 
-.button-link {
+.gradient-btn {
   width: 280px;
   padding: 10px;
   text-align: center;
@@ -182,7 +182,7 @@ body .skills-container {
   border: 2px solid #fff;
 }
 
-.button-link:before {
+.gradient-btn:before {
   content: "";
   position: absolute;
   top: 0;
@@ -194,7 +194,7 @@ body .skills-container {
   transition: all 0.5s;
 }
 
-.button-link:hover::before {
+.gradient-btn:hover::before {
   width: 100%;
 }
 
@@ -384,7 +384,7 @@ body .skills-container {
   transition: visibility 0.8s;
   margin-top: 1em;
 }
-.projects .link-container .button-link {
+.projects .link-container .gradient-btn {
   font-size: 0.8em;
   width: 160px;
   padding: 4px;
@@ -429,6 +429,53 @@ body .skills-container {
   color: #fff;
   background: transparent;
   border: 2px solid #fff;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  justify-content: center;
+  align-items: center;
+}
+.contact p {
+  color: #808080;
+  font-size: 1.2em;
+  width: clamp(50vw, 500px, 460px);
+  text-align: center;
+}
+.contact .page-form {
+  width: clamp(50vw, 500px, 460px);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.contact .page-form .form-input {
+  font-size: 0.7em;
+  padding: 16px;
+  background-color: #000;
+  border: 0;
+  border-bottom: 1px solid #808080;
+  transition: 0.5s;
+}
+.contact .page-form .form-input::placeholder {
+  color: #808080;
+}
+.contact .page-form textarea.form-input, .contact .page-form textarea.form-input::placeholder {
+  font-size: 1.1em;
+}
+.contact .page-form input.form-input {
+  height: 70px;
+}
+.contact .page-form textarea.form-input {
+  height: 200px;
+  font-size: 0.7em;
+}
+.contact .page-form .form-input:focus {
+  border-bottom-color: #f388f3;
+}
+.contact .page-form .form-btn {
+  width: 100%;
 }
 
 body {
