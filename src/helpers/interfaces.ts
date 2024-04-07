@@ -9,7 +9,7 @@ export interface Data {
             "url": string;
         }[];
 
-        "description": string;
+        "description": () => string;
         "education": string;
         "photo": string;
 

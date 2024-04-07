@@ -15,20 +15,34 @@ export const data: Data = {
                 "url": "https://github.com/Its-JustMe"
             }
         ],
-        "description": "com experiência em programação utilizando HTML, CSS/SASS, JavaScript/TypeScript e NodeJS e com conhecimento em Programação Orientada a Objetos (POO); Meu primeiro contato com programação foi aos 14 anos, mas foi aos 16 que comecei a me dedicar a essa área de forma mais intensa  quando ingressei no curso de Informática para Internet na",
+        "description": function () {
+            const skills = [];
+            for (let skill = 0; skill < this.skills.length; skill++) {
+                if (skill === 6) {
+                    break;
+                }
+                skills.push(this.skills[skill].name);
+            }
+            return `${this.subject} com experiência em programação utilizando ${skills.join(', ')} e com conhecimento em Programação Orientada a Objetos (POO); Meu primeiro contato com programação foi aos 14 anos, mas foi aos 16 que comecei a me dedicar a essa área de forma mais intensa  quando ingressei no curso de Informática para Internet na${this.subject} `
+        },
         "education": "FIEB",
         "photo": "/imgs/foto_arthur.jpeg",
 
         "skills": [
             {
-                "name": "HTML5",
+                "name": "HTML",
                 "icon": "devicon-html5-plain",
                 "percent": "90%"
             },
             {
-                "name": "CSS3",
+                "name": "CSS",
                 "icon": "devicon-css3-plain",
                 "percent": "85%"
+            },
+            {
+                "name": "SASS",
+                "icon": "devicon-sass-original",
+                "percent": "40%"
             },
             {
                 "name": "JavaScript",
@@ -41,7 +55,7 @@ export const data: Data = {
                 "percent": "30%"
             },
             {
-                "name": "Node.JS",
+                "name": "NodeJS",
                 "icon": "devicon-nodejs-plain",
                 "percent": "40%"
             },
@@ -49,11 +63,6 @@ export const data: Data = {
                 "name": "Bootstrap",
                 "icon": "devicon-bootstrap-plain",
                 "percent": "25%"
-            },
-            {
-                "name": "SASS",
-                "icon": "devicon-sass-original",
-                "percent": "40%"
             },
             {
                 "name": "Express.js",
