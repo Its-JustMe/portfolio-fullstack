@@ -11,18 +11,14 @@ export default {
   validationRules: [
     body(
       'nome_cliente'
-    ).notEmpty().trim().isAlpha(
-      'pt-BR', 
-      { ignore: [' ', '-' ] }
-    ).withMessage('Insira um nome válido'),
+    ).notEmpty().isAlpha('pt-BR', { ignore: [' ', '-' ] })
+      .withMessage('Insira um nome válido'),
 
-    body(
-      'email_cliente'
-    ).notEmpty().trim().isEmail().withMessage('Insira um endereço de email válido'),
+    body('email_cliente').notEmpty().isEmail()
+      .withMessage('Insira um endereço de email válido'),
 
-    body(
-      'assunto_cliente'
-    ).trim().escape().notEmpty().withMessage('Não pode enviar uma mensagem vazia')
+    body('assunto_cliente').escape()
+      .notEmpty().withMessage('Não pode enviar uma mensagem vazia')
   ],
   /**
    * Função que renderiza no navegador a página home.
@@ -30,11 +26,11 @@ export default {
    * @param res Response
    * @param errors Objeto com erros de validação ou parâmetro nulo
   */
-  renderHome: (req: Request, res: Response, errors: Result<ValidationError> | null = null): void => {
+  renderHome: (req: Request, res: Response): void => {
     res.render(
       'pages/index', 
       {
-        errors: errors,
+        errors: null,
         data: data,
         partials: [
           'skills',
@@ -58,7 +54,18 @@ export default {
     } catch (e: unknown) {
       console.log(e);
 
-      this.renderHome(req, res, errors);
+      res.render(
+        'pages/index', 
+        {
+          errors: errors,
+          data: data,
+          partials: [
+            'skills',
+            'projects',
+            'form'
+          ]
+        }
+      );
     }
 
     res.redirect("/");
