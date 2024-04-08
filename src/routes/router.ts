@@ -7,5 +7,9 @@ router.get('/', (req: Request, res: Response) => {
   homeController.renderHome(req, res);
 });
 
+router.post('/send', homeController.validationRules, (req: Request, res: Response) => {
+  homeController.validateForm(req, res);
+});
+
 
 export default router;

@@ -2,7 +2,7 @@ import { data } from '../helpers/data';
 import { formData } from '../helpers/interfaces';
 import { homeModel } from '../models/homeModels';
 import { Request, Response } from 'express';
-import { body, validationResult } from 'express-validator';
+import { body, validationResult, ValidationError, Result } from 'express-validator';
 
 export default {
   /**
@@ -28,12 +28,13 @@ export default {
    * Função que renderiza no navegador a página home.
    * @param req Request
    * @param res Response
+   * @param errors Objeto com erros de validação ou parâmetro nulo
   */
-  renderHome: (req: Request, res: Response): void => {
+  renderHome: (req: Request, res: Response, errors: Result<ValidationError> | null = null): void => {
     res.render(
       'pages/index', 
       {
-        errors: null,
+        errors: errors,
         data: data,
         partials: [
           'skills',
@@ -48,8 +49,18 @@ export default {
    * @param req Request
    * @param res Response
   */
-  validateForm: (req: Request, res: Response) => {
-    const errors = validationResult(req);
+  validateForm: function (req: Request, res: Response) {
+    const errors: Result<ValidationError> = validationResult(req);
     const { email_client, email_subject, email_msg }: formData = req.body;
+
+    try {
+      const result = homeModel.sendEmail({email_client, email_subject, email_msg});
+    } catch (e: unknown) {
+      console.log(e);
+
+      this.renderHome(req, res, errors);
+    }
+
+    res.redirect("/");
   }
 };

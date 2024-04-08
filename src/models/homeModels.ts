@@ -1,13 +1,14 @@
 import { transporter } from '../helpers/helpers';
 import { data } from '../helpers/data';
+import { formData } from '../helpers/interfaces';
 
 export const homeModel = {
-    sendEmail: (formData: any) => {
+    sendEmail: async (clientData: formData) => {
         const mailOptions = {
-            from: formData.email_client,
+            from: clientData.email_client,
             to: data.hero.email,
-            subject: formData.email_subject,
-            text: formData.email_msg
+            subject: clientData.email_subject,
+            text: clientData.email_msg
         };
 
         transporter.sendMail(mailOptions, (error, info) => {
