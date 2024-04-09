@@ -1,12 +1,14 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var express_1 = require("express");
-var homeController_1 = require("../controllers/homeController");
-var router = express_1.default.Router();
+const express = require('express');
+const homeController = require('../controllers/homeController');
+
+const router = express.Router();
+
 router.get('/', function (req, res) {
-    homeController_1.default.renderHome(req, res);
+  homeController.renderHome(req, res);
 });
-router.post('/send', homeController_1.default.validationRules, function (req, res) {
-    homeController_1.default.validateForm(req, res);
+
+router.post('/send', homeController.validationRules, function (req, res) {
+  homeController.validateForm(req, res);
 });
-exports.default = router;
+
+module.exports = router;

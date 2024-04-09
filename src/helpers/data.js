@@ -1,4 +1,4 @@
-export const data = {
+exports.data = {
     "title": "Arthur Santos | Portfolio Website",
     "hero": {
         "name": "Arthur Santos",

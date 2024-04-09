@@ -1,7 +1,7 @@
-import nodemailer from 'nodemailer';
+const nodemailer = require('nodemailer');
 
 // Configurações para o serviço de email (exemplo com Gmail)
-export const transporter = nodemailer.createTransport({
+exports.transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'contato.arthursantosdev@gmail.com',
