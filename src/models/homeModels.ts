@@ -11,7 +11,7 @@ export const homeModel = {
             text: clientData.email_msg
         };
 
-        transporter.sendMail(mailOptions, (error, info) => {
+        transporter.sendMail(mailOptions, (error: any, info: any) => {
             if (error) {
             console.error('Erro ao enviar o email:', error);
             } else {
