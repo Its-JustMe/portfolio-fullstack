@@ -50,5 +50,14 @@
             width: 100%;
             
         }
+
+        span {
+            color: $error-color;
+            font-size: 1.2em;
+        }
+
+        .invalid {
+            border-bottom-color: $error-color;
+        }
     }
 }

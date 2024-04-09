@@ -8,7 +8,6 @@ module.exports = {
     */
     validationRules: [
         body('nome_cliente').notEmpty().isAlpha('pt-BR', { ignore: [' ', '-'] }).withMessage('Insira um nome válido'),
-        body('email_cliente').notEmpty().isEmail().withMessage('Insira um endereço de email válido'),
         body('assunto_cliente').escape().notEmpty().withMessage('Não pode enviar uma mensagem vazia')
     ],
 
@@ -19,8 +18,9 @@ module.exports = {
      */
     renderHome: function (req, res) {
         res.render('pages/index', {
-        errors: null,
+        errorList: null,
         data: data,
+        form: null,
         partials: ['skills', 'projects', 'form']
         });
     },
@@ -32,22 +32,24 @@ module.exports = {
      */
     validateForm: function (req, res) {
         const errors = validationResult(req);
-        const { client_name, email_client, email_subject, email_msg } = req.body;
+
 
         if (!errors.isEmpty()) {
             return res.render('pages/index', {
-                errors: errors,
+                errorList: errors,
                 data: data,
+                form: req.body,
                 partials: ['skills', 'projects', 'form']
             });
+        
         }
 
+        const { nome_cliente, assunto_cliente, msg_cliente } = req.body;
+
         try {
-            homeModel.sendClientEmail({ client_name, email_client, email_subject, email_msg });
+            homeModel.sendClientEmail({ nome_cliente, assunto_cliente, msg_cliente }, res);
         } catch (e) {
             console.log(e);
         }
-
-        return res.redirect("/");
     }
 };

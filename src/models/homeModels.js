@@ -1,22 +1,11 @@
-const { transporter } = require('../helpers/transporter');
+const transporter = require('../helpers/transporter');
 const { data } = require('../helpers/data');
 
 module.exports = {
-    sendClientEmail: async (clientData) => {
+    sendClientEmail: async (clientData, res) => {
+        const msg = clientData.msg_cliente
+        clientData.msg_cliente = `Olá, me chamo ${clientData.nome_cliente}, \n\n${msg}`;
 
-        const mailOptions = {
-            from: clientData.email_client,
-            to: 'arthursantos48211@gmail.com',
-            subject: clientData.email_subject,
-            text: `Olá, me chamo ${clientData.client_name},\n\n ${clientData.email_msg}`
-        };
-
-        transporter.sendMail(mailOptions, function (error, info) {
-            if (error) {
-                console.error('Erro ao enviar o e-mail:', error);
-            } else {
-                console.log('E-mail enviado:', info.response);
-            }
-        });
+        res.redirect(`mailto:${transporter.email}?subject=${clientData.assunto_cliente}&body=${msg}`);
     }
 };
