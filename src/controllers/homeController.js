@@ -7,8 +7,9 @@ module.exports = {
     * Regras de validação de dados do usuário
     */
     validationRules: [
-        body('nome_cliente').notEmpty().isAlpha('pt-BR', { ignore: [' ', '-'] }).withMessage('Insira um nome válido'),
-        body('assunto_cliente').escape().notEmpty().withMessage('Não pode enviar uma mensagem vazia')
+        body('nome_cliente').trim().notEmpty().isAlpha('pt-BR', { ignore: [' ', '-'] }).withMessage('Insira um nome válido'),
+        body('assunto_cliente').trim().escape().notEmpty().isAlpha('pt-BR', { ignore: [' ', '-'] }).withMessage('Campo inválido'),
+        body('msg_cliente').trim().escape().notEmpty().isAlphanumeric().withMessage('Campo de mensagem inválido'),
     ],
 
     /**
