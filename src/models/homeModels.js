@@ -1,23 +1,22 @@
-const { transporter } = require('../helpers/helpers');
+const { transporter } = require('../helpers/transporter');
 const { data } = require('../helpers/data');
 
-const homeModel = {
-    sendEmail: async (clientData) => {
+module.exports = {
+    sendClientEmail: async (clientData) => {
+
         const mailOptions = {
             from: clientData.email_client,
-            to: data.hero.email,
+            to: 'arthursantos48211@gmail.com',
             subject: clientData.email_subject,
-            text: clientData.email_msg
+            text: `Olá, me chamo ${clientData.client_name},\n\n ${clientData.email_msg}`
         };
 
-        transporter.sendMail(mailOptions, (error, info) => {
+        transporter.sendMail(mailOptions, function (error, info) {
             if (error) {
-                console.error('Erro ao enviar o email:', error);
+                console.error('Erro ao enviar o e-mail:', error);
             } else {
-                console.log('Email enviado:', info.response);
+                console.log('E-mail enviado:', info.response);
             }
         });
     }
 };
-
-module.exports = homeModel;

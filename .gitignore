@@ -1,4 +1,3 @@
 node_modules
-tsconfig.json
-src/helpers/data.ts
-src/helpers/helpers.ts
+src/helpers/data.js
+src/helpers/transporter.js
