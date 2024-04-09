@@ -1,6 +1,4 @@
-import { Data } from './interfaces';
-
-export const data: Data = {
+export const data = {
     "title": "Arthur Santos | Portfolio Website",
     "hero": {
         "name": "Arthur Santos",

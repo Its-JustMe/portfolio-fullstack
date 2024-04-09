@@ -8,7 +8,7 @@
     <li>Este é o respositório do portfólio pessoal do desenvolvedor Arthur Santos, contendo informações de seus projetos e de contato.</li>
     <li> Desenvolvido utilizando as seguintes linguagens/ferramentas: 
         <ul>
-            <li> <strong>Typescript</strong> como linguagem back-end </li>
+            <li> <strong>NodeJS</strong> como linguagem back-end </li>
             <li> <strong>Framework ExpressJS</strong> para a construção do servidor</li>
             <li> <strong>Middleware Functions do Express-validator</strong> para a validação de mensagem de e-mail</li>
             <li><strong>Template Engine EJS</strong> para renderizar as páginas de forma dinâmica</li>
