@@ -10,11 +10,21 @@ body {
         gap: 5em;
 }
 
-.about[data-animate="true"] {
-    animation: fadeIn 1.5s;
-}
-.skills {
+[data-animate="true"].animar {
     animation: slideLeft .8s;
+    opacity: 1;
+}
+
+[data-animate="true"] {
+    opacity: 0;
+    transition: 1.2s;
+}
+[data-animate="false"] {
+    opacity: 1;
+}
+
+.about[data-animate="true"] {
+    animation: fadeIn .8s;
 }
 
 .about, .skills {

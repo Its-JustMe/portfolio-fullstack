@@ -1,8 +1,12 @@
-import { changeNavbarOnScroll } from './modules/modules.js';
+import * as modules from './modules/modules.js';
 
 (() => {
-    alert(data.hero.name)
     document.addEventListener('DOMContentLoaded', function () {
-        window.onscroll = () => changeNavbarOnScroll(document.querySelector('.page-header'));
+        modules.activateScrollAnimations();
+
+        window.onscroll = () => {
+            modules.changeNavbarOnScroll(document.querySelector('.page-header'));
+            modules.animateOnScroll('animar');
+        };
     });
-})()
+})();

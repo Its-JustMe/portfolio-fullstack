@@ -132,7 +132,7 @@ exports.data = {
                 "urlRepository": "https://github.com/Its-JustMe/previsaoDoTempo",
                 "langIcons": [
                     "devicon-html5-plain gradient-icon", 
-                    "devicon-javascript-plain gradient-icon"
+                    "devicon-typescript-plain gradient-icon"
                 ]
             },
             {
