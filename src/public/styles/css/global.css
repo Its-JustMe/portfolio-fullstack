@@ -90,7 +90,7 @@ body .skills-container {
 @keyframes slideLeft {
   from {
     opacity: 0;
-    transform: translateX(-50vw);
+    transform: translateX(-25vw);
   }
   to {
     opacity: 1;
@@ -123,9 +123,9 @@ body .skills-container {
 .main-subheading.animation-typing {
   width: 12ch;
   white-space: nowrap;
-  animation: urcyo8j 4.5s infinite;
+  animation: u7uiegm 4.5s infinite;
 }
-@keyframes urcyo8j {
+@keyframes u7uiegm {
   from {
     width: 0;
   }
@@ -155,9 +155,9 @@ body .skills-container {
 }
 
 .subheading[data-animate=true] {
-  animation: urcyo99 4.5s alternate;
+  animation: u7uiehc 4.5s alternate;
 }
-@keyframes urcyo99 {
+@keyframes u7uiehc {
   from {
     width: 0;
   }
