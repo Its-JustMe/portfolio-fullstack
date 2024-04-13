@@ -1,3 +1,4 @@
+const { data } = require('../helpers/data');
 const homeModel = require('../models/homeModels');
 const { validationResult, body } = require('express-validator');
 

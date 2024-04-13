@@ -78,6 +78,45 @@ body .card-skill {
 body .skills-container {
   padding: 0 2em 0 2em;
 }
+@media screen and (max-width: 1024px) {
+  body .menu {
+    flex-direction: column;
+    justify-content: center;
+  }
+  body .hamburger-container {
+    display: block;
+    z-index: 222;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+  }
+  body .hamburger-container i {
+    overflow-y: hidden;
+    cursor: pointer;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #63b6fa, #f388f3);
+    font-size: 2em;
+    transition: transform 0.5s;
+  }
+  body .hamburger-container i.active {
+    transform: rotate(90deg);
+  }
+  body .page-header {
+    width: 200px;
+    height: 0;
+    padding: 6px;
+    align-items: center;
+    border-bottom: 0;
+    border-right: 3px solid transparent;
+    border-image: linear-gradient(to right, #63b6fa, #f388f3) 10;
+    backdrop-filter: blur(5px);
+  }
+  body .page-header.active {
+    height: 100vh;
+  }
+}
 
 @keyframes fadeIn {
   from {
@@ -123,9 +162,9 @@ body .skills-container {
 .main-subheading.animation-typing {
   width: 12ch;
   white-space: nowrap;
-  animation: u7uiegm 4.5s infinite;
+  animation: uwrtkmj 4.5s infinite;
 }
-@keyframes u7uiegm {
+@keyframes uwrtkmj {
   from {
     width: 0;
   }
@@ -155,9 +194,9 @@ body .skills-container {
 }
 
 .subheading[data-animate=true] {
-  animation: u7uiehc 4.5s alternate;
+  animation: uwrtkmp 4.5s alternate;
 }
-@keyframes u7uiehc {
+@keyframes uwrtkmp {
   from {
     width: 0;
   }
@@ -212,7 +251,11 @@ body .skills-container {
   justify-content: flex-start;
   align-items: center;
   overflow: hidden;
-  transition: transform 0.5s;
+  transition: height 0.5s, transform 0.5s;
+}
+
+.hamburger-container {
+  display: none;
 }
 
 .page-header.shown {

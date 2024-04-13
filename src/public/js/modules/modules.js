@@ -38,3 +38,21 @@ export function animateOnScroll(animation) {
         }
     });
 }
+
+export function mobileMenuHandler (header) {
+    if (header.classList.contains('shown')) {
+        header.classList.remove('shown');
+    } else if (header.classList.contains('hidden')) {
+        header.classList.remove('hidden');
+    }
+
+    document.querySelector('i.fa-bars').onclick = function () {
+        if (header.classList.contains('active')) {
+            this.classList.remove('active');
+            header.classList.remove('active');
+        } else {
+            this.classList.add('active');
+            header.classList.add('active');
+        }
+    }
+}

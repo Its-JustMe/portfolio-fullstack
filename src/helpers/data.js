@@ -22,7 +22,7 @@ exports.data = {
                 }
                 skills.push(this.skills[skill].name);
             }
-            return `${this.subject} com experiência em programação utilizando ${skills.join(', ')} e com conhecimento em Programação Orientada a Objetos (POO); Meu primeiro contato com programação foi aos 14 anos, mas foi aos 16 que comecei a me dedicar a essa área de forma mais intensa  quando ingressei no curso de Informática para Internet na${this.subject} `
+            return `${this.subject} com experiência em programação utilizando ${skills.join(', ')} e com conhecimento em Programação Orientada a Objetos (POO); Meu primeiro contato com programação foi aos 14 anos, mas foi aos 16 que comecei a me dedicar a essa área de forma mais intensa  quando ingressei no curso de Informática para Internet na `
         },
         "education": "FIEB",
         "photo": "/imgs/foto_arthur.jpeg",
@@ -142,7 +142,7 @@ exports.data = {
                 "urlRepository": "https://github.com/Its-JustMe/movie-app",
                 "langIcons": [
                     "devicon-sass-original",
-                    "devicon-javascript-plain gradient-icon"
+                    "devicon-typescript-plain gradient-icon"
                 ]
             }
         ]

@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="/styles/css/global.css" type="text/css">
     <!--Link DevIcon-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!--Link FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title><%= data.title %></title>
 </head>
 <body>
+    <div class="hamburger-container">
+        <i class="fa-solid fa-bars"></i>
+    </div>
     <header class="page-header">
         <nav class="menu-wrap">
             <ul class="menu">
@@ -63,7 +68,6 @@
     <section class="page-section about" id="about" data-animate="false">
         <h3 class="subheading">Sobre</h3>
         <p class="paragraph">
-            <%= data.hero.subject %> 
             <%= data.hero.description() %> 
             <abbr title="Fundação Instituto de Educação de Barueri"><%= data.hero.education %></abbr>;
         </p>

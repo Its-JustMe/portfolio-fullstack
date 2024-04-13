@@ -13,7 +13,11 @@
     align-items: center;
     overflow: hidden;
 
-    transition: transform .5s;
+    transition: height .5s, transform .5s;
+}
+
+.hamburger-container {
+    display: none;
 }
 
 .page-header.shown {
