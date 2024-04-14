@@ -46,12 +46,4 @@
     flex-wrap: wrap;
 
     position: relative;
-
-    i {
-        color: $text-color;
-        transition: color .8s;
-    }
-    i:hover {
-        color: $secondary-theme-color;
-    }
 }

@@ -42,9 +42,6 @@
     font-size: $subheading-size;
     text-align: center;
 }
-.subheading[data-animate="true"] {
-    @include typing-animation(100%, alternate);
-}
 
 .gradient-btn {
     width: 280px;
@@ -89,4 +86,12 @@
 
 .social-link {
     font-size: 2.5em;
+
+    i {
+        color: $text-color;
+        transition: color .8s;
+    }
+    i:hover {
+        color: $secondary-theme-color;
+    }
 }

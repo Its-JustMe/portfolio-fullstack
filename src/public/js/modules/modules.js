@@ -2,22 +2,24 @@ let last_scroll_top = 0;
 const data_animate = document.querySelectorAll('[data-animate]');
 
 export const changeNavbarOnScroll = (header) => {
-    const current_scroll = window.scrollY;
+    if (window.innerWidth >= 768) {
+        const current_scroll = window.scrollY;
 
-    if (current_scroll > last_scroll_top) {
-        header.classList.remove('shown');
-        header.classList.add('hidden');
-    } else {
-        header.classList.remove('hidden');
-        header.classList.add('shown');
+        if (current_scroll > last_scroll_top) {
+            header.classList.remove('shown');
+            header.classList.add('hidden');
+        } else {
+            header.classList.remove('hidden');
+            header.classList.add('shown');
+        }
+
+        if (current_scroll === 0) {
+            header.classList.remove('hidden');
+            header.classList.remove('shown');
+        }
+
+        last_scroll_top = current_scroll <= 0 ? 0 : current_scroll;
     }
-
-    if (current_scroll === 0) {
-        header.classList.remove('hidden');
-        header.classList.remove('shown');
-    }
-
-    last_scroll_top = current_scroll <= 0 ? 0 : current_scroll;
 }
 
 export function activateScrollAnimations () {
@@ -40,13 +42,8 @@ export function animateOnScroll(animation) {
 }
 
 export function mobileMenuHandler (header) {
-    if (header.classList.contains('shown')) {
-        header.classList.remove('shown');
-    } else if (header.classList.contains('hidden')) {
-        header.classList.remove('hidden');
-    }
-
-    document.querySelector('i.fa-bars').onclick = function () {
+    const mobileMenuIcon = document.querySelector('i.fa-bars');
+    mobileMenuIcon.onclick = function () {
         if (header.classList.contains('active')) {
             this.classList.remove('active');
             header.classList.remove('active');
@@ -55,4 +52,11 @@ export function mobileMenuHandler (header) {
             header.classList.add('active');
         }
     }
+
+    document.querySelectorAll('.menu-item').forEach(function (item) {
+        item.addEventListener('click', () => {
+            mobileMenuIcon.classList.remove('active');
+            header.classList.remove('active');
+        });
+    })
 }

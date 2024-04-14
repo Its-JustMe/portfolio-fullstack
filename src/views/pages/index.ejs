@@ -49,17 +49,18 @@
                     <%= data.hero.subject %>
                 </h2>
                 <div class="btn-container">
-                    <a href="./assets/cv/curriculo_ArthurSantos.pdf" download="curriculo_ArthurSantos" class="gradient-btn" id="download-cv">
+                    <a href="<%= data.hero.curriculum %>" download="curriculo_ArthurSantos" class="gradient-btn" id="download-cv">
                         <span lang="en-us">
                             Download
                         </span>
                         <abbr title="Curriculum vitae - Currículo">C/V</abbr>
                     </a>
-                    <% data.hero.social.forEach(item => { %>
+                    <% for (let item of data.hero.social) { %>
+                        <% if (item.icon === 'fa-solid fa-envelope') { break }; %>
                         <a href="<%= item.url %>" class="social-link" target="_blank">
                             <i class="<%= item.icon %>"></i>
                         </a>
-                   <%});%>
+                    <%};%>
                 </div>
             </div>
         </section>
@@ -76,6 +77,18 @@
     <% for (let section of partials) { %>
         <%- include(`../partial/${section}`) %>
     <%}%>
+
+    <footer class="page-footer">
+        <div class="icons-container"> 
+            <% for (let item of data.hero.social) { %>
+                <a href="<%= item.url %>" class="social-link" target="_blank">
+                    <i class="<%= item.icon %>"></i>
+                </a>
+            <%};%>
+        </div>
+
+        <h5> Feito por <span>Arthur Santos</span>; Todos os direitos reservados</h5>
+    </footer>
 
     
     <script type="module" src="/js/script.js"></script>

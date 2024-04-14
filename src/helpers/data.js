@@ -11,9 +11,13 @@ exports.data = {
             {
                 "icon": "devicon-github-original",
                 "url": "https://github.com/Its-JustMe"
+            },
+            {
+                "icon": "fa-solid fa-envelope",
+                "url": "mailto:contato.arthursantosdev",
             }
         ],
-        "email": "contato.arthursantosdev.gmail.com",
+        "curriculum": "/assets/cv/curriculo_ArthurSantos.pdf",
         "description": function () {
             const skills = [];
             for (let skill = 0; skill < this.skills.length; skill++) {
@@ -25,7 +29,7 @@ exports.data = {
             return `${this.subject} com experiência em programação utilizando ${skills.join(', ')} e com conhecimento em Programação Orientada a Objetos (POO); Meu primeiro contato com programação foi aos 14 anos, mas foi aos 16 que comecei a me dedicar a essa área de forma mais intensa  quando ingressei no curso de Informática para Internet na `
         },
         "education": "FIEB",
-        "photo": "/imgs/foto_arthur.jpeg",
+        "photo": "/assets/imgs/foto_arthur.jpeg",
 
         "skills": [
             {

@@ -1,0 +1,22 @@
+.page-footer {
+    width: 60%;
+    margin: auto;
+
+    display: flex;
+        flex-direction: column;
+        gap: 1.2em;
+        justify-content: center;
+        align-items: center;
+
+    padding-top: 1em;
+    border-top: 2px solid transparent;
+    border-image: $gradient-theme 10;
+
+    .icons-container {
+        display: inline-flex;
+        gap: 1.2em;
+    }
+}
+h5 span {
+    color: $primary-theme-color;
+}
