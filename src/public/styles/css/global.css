@@ -104,7 +104,7 @@ body .skills-container {
     transform: rotate(90deg);
   }
   body .page-header {
-    width: 0px;
+    width: 200px;
     height: 100vh;
     padding: 6px;
     align-items: first baseline;
@@ -113,9 +113,10 @@ body .skills-container {
     border-right: 3px solid transparent;
     border-image: linear-gradient(to right, #63b6fa, #f388f3) 10;
     backdrop-filter: blur(5px);
+    transform: translateX(-201px);
   }
   body .page-header.active {
-    width: 200px;
+    transform: translateX(0);
   }
 }
 
@@ -171,9 +172,9 @@ body .skills-container {
 .main-subheading.animation-typing {
   width: 12ch;
   white-space: nowrap;
-  animation: udnd8ew 4.5s infinite;
+  animation: udnd8m5 4.5s infinite;
 }
-@keyframes udnd8ew {
+@keyframes udnd8m5 {
   from {
     width: 0;
   }
@@ -481,11 +482,11 @@ body .skills-container {
 .contact p {
   color: #808080;
   font-size: 1.2em;
-  width: clamp(50vw, 500px, 460px);
+  width: 100%;
   text-align: center;
 }
 .contact .page-form {
-  width: clamp(50vw, 500px, 460px);
+  width: clamp(50vw, 500px, 400px);
   display: flex;
   flex-direction: column;
   gap: 1em;

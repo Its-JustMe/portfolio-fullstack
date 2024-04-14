@@ -8,12 +8,12 @@
     p {
         color: $paragraph-color;
         font-size: 1.2em;
-        width: clamp(50vw, 500px, 460px);
+        width: 100%;
         text-align: center;
     }
 
     .page-form {
-        width: clamp(50vw, 500px, 460px);
+        width: clamp(50vw, 500px, 400px);
         display: flex;
         flex-direction: column;
         gap: 1em;
