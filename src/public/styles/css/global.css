@@ -78,7 +78,7 @@ body .card-skill {
 body .skills-container {
   padding: 0 2em 0 2em;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 64em) {
   body .menu {
     flex-direction: column;
     justify-content: center;
@@ -104,17 +104,18 @@ body .skills-container {
     transform: rotate(90deg);
   }
   body .page-header {
-    width: 200px;
-    height: 0;
+    width: 0px;
+    height: 100vh;
     padding: 6px;
-    align-items: center;
+    align-items: first baseline;
+    padding-top: 6em;
     border-bottom: 0;
     border-right: 3px solid transparent;
     border-image: linear-gradient(to right, #63b6fa, #f388f3) 10;
     backdrop-filter: blur(5px);
   }
   body .page-header.active {
-    height: 100vh;
+    width: 200px;
   }
 }
 
@@ -170,9 +171,9 @@ body .skills-container {
 .main-subheading.animation-typing {
   width: 12ch;
   white-space: nowrap;
-  animation: unwfhfz 4.5s infinite;
+  animation: udnd8ew 4.5s infinite;
 }
-@keyframes unwfhfz {
+@keyframes udnd8ew {
   from {
     width: 0;
   }
@@ -254,7 +255,7 @@ body .skills-container {
   justify-content: flex-start;
   align-items: center;
   overflow: hidden;
-  transition: height 0.5s, transform 0.5s;
+  transition: width 0.5s, transform 0.5s;
 }
 
 .hamburger-container {
