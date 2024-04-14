@@ -86,7 +86,7 @@ exports.data = {
         "projects": [
             {
                 "name": "LingoLink",
-                "imgPath": "/imgs/projects/tradutor.png",
+                "imgPath": "/assets/imgs/projects/tradutor.png",
                 "urlWebsite": "https://tradutor-typescript.vercel.app/",
                 "urlRepository": "https://github.com/Its-JustMe/tradutor-typescript",
                 "langIcons": [
@@ -97,7 +97,7 @@ exports.data = {
             },
             {
                 "name": "QuímicaFácil",
-                "imgPath": "/imgs/projects/quimicafacil.png",
+                "imgPath": "/assets/imgs/projects/quimicafacil.png",
                 "urlWebsite": "https://quimicafacil.vercel.app/",
                 "urlRepository": "https://github.com/Its-JustMe/quimicafacil",
                 "langIcons": [
@@ -108,7 +108,7 @@ exports.data = {
             },
             {
                 "name": "Cadastro",
-                "imgPath": "/imgs/projects/cadastro.png",
+                "imgPath": "/assets/imgs/projects/cadastro.png",
                 "urlWebsite": "https://crud-node-haue.onrender.com/",
                 "urlRepository": "https://github.com/Its-JustMe/crud-node",
                 "langIcons": [
@@ -120,7 +120,7 @@ exports.data = {
             },
             {
                 "name": "Relógio Digital",
-                "imgPath": "/imgs/projects/relogio.png",
+                "imgPath": "/assets/imgs/projects/relogio.png",
                 "urlWebsite": "https://relogio-navy.vercel.app/",
                 "urlRepository": "https://github.com/Its-JustMe/relogio",
                 "langIcons": [
@@ -131,7 +131,7 @@ exports.data = {
             },
             {
                 "name": "Previsão do Tempo",
-                "imgPath": "/imgs/projects/previsao-do-tempo.png",
+                "imgPath": "/assets/imgs/projects/previsao-do-tempo.png",
                 "urlWebsite": "https://previsao-do-tempo-jet.vercel.app/",
                 "urlRepository": "https://github.com/Its-JustMe/previsaoDoTempo",
                 "langIcons": [
@@ -141,7 +141,7 @@ exports.data = {
             },
             {
                 "name": "Movie App",
-                "imgPath": "/imgs/projects/movies.png",
+                "imgPath": "/assets/imgs/projects/movies.png",
                 "urlWebsite": "https://its-justme.github.io/movie-app/",
                 "urlRepository": "https://github.com/Its-JustMe/movie-app",
                 "langIcons": [
