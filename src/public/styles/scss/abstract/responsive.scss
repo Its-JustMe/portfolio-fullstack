@@ -46,7 +46,7 @@ body {
 
         .hamburger-container {
             display: block;
-            z-index: 222;
+            z-index: 999;
             position: fixed;
                 top: 10px;
                 left: 20px;
@@ -66,6 +66,8 @@ body {
 
         .page-header {
             @include set-very-large-font();
+
+            z-index: 888;
 
             width: 200px;
             height: 100vh;

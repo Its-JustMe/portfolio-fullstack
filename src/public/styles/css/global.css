@@ -85,7 +85,7 @@ body .skills-container {
   }
   body .hamburger-container {
     display: block;
-    z-index: 222;
+    z-index: 999;
     position: fixed;
     top: 10px;
     left: 20px;
@@ -105,6 +105,7 @@ body .skills-container {
   }
   body .page-header {
     font-size: x-large;
+    z-index: 888;
     width: 200px;
     height: 100vh;
     padding: 6px;
@@ -173,9 +174,9 @@ body .skills-container {
 .main-subheading.animation-typing {
   width: 12ch;
   white-space: nowrap;
-  animation: uxwi396 4.5s infinite;
+  animation: uh8uz7p 4.5s infinite;
 }
-@keyframes uxwi396 {
+@keyframes uh8uz7p {
   from {
     width: 0;
   }
@@ -487,7 +488,7 @@ body .skills-container {
   text-align: center;
 }
 .contact .page-form {
-  width: clamp(50vw, 500px, 400px);
+  width: clamp(50vw, 500px, 380px);
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -525,6 +526,9 @@ body .skills-container {
 }
 .contact .page-form .invalid {
   border-bottom-color: #ff0000;
+}
+.contact .page-form button {
+  z-index: 111;
 }
 
 .page-footer {

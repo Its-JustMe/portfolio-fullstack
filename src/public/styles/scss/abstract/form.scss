@@ -13,7 +13,7 @@
     }
 
     .page-form {
-        width: clamp(50vw, 500px, 400px);
+        width: clamp(50vw, 500px, 380px);
         display: flex;
         flex-direction: column;
         gap: 1em;
@@ -58,6 +58,10 @@
 
         .invalid {
             border-bottom-color: $error-color;
+        }
+
+        button {
+            z-index: 111;
         }
     }
 }
