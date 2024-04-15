@@ -174,9 +174,9 @@ body .skills-container {
 .main-subheading.animation-typing {
   width: 12ch;
   white-space: nowrap;
-  animation: uh8uz7p 4.5s infinite;
+  animation: uh8uz7y 4.5s infinite;
 }
-@keyframes uh8uz7p {
+@keyframes uh8uz7y {
   from {
     width: 0;
   }
@@ -523,6 +523,7 @@ body .skills-container {
 .contact .page-form span {
   color: #ff0000;
   font-size: 1.2em;
+  text-align: center;
 }
 .contact .page-form .invalid {
   border-bottom-color: #ff0000;
