@@ -104,6 +104,7 @@ body .skills-container {
     transform: rotate(90deg);
   }
   body .page-header {
+    font-size: x-large;
     width: 200px;
     height: 100vh;
     padding: 6px;
@@ -172,9 +173,9 @@ body .skills-container {
 .main-subheading.animation-typing {
   width: 12ch;
   white-space: nowrap;
-  animation: udnd8m5 4.5s infinite;
+  animation: uxwi396 4.5s infinite;
 }
-@keyframes udnd8m5 {
+@keyframes uxwi396 {
   from {
     width: 0;
   }

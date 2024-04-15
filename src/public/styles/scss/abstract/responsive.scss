@@ -65,6 +65,8 @@ body {
         }
 
         .page-header {
+            @include set-very-large-font();
+
             width: 200px;
             height: 100vh;
             padding: 6px;

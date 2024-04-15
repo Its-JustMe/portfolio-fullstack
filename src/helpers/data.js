@@ -130,7 +130,7 @@ exports.data = {
                 ]
             },
             {
-                "name": "Previsão do Tempo",
+                "name": "Clima",
                 "imgPath": "/assets/imgs/projects/previsao-do-tempo.png",
                 "urlWebsite": "https://previsao-do-tempo-jet.vercel.app/",
                 "urlRepository": "https://github.com/Its-JustMe/previsaoDoTempo",
